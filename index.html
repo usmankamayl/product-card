@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ананасовый улун — карточка товара · Teaboom.ru</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <main class="page">
+    <div class="container">
+
+      <!-- Хлебные крошки -->
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <ol>
+          <li><a href="#">Начало</a></li>
+          <li><a href="#">Каталог</a></li>
+          <li><a href="#">Улун</a></li>
+          <li><a href="#">Ароматизированный улун</a></li>
+          <li aria-current="page">Ананасовый улун</li>
+        </ol>
+      </nav>
+
+      <!-- Карточка товара -->
+      <article class="product">
+
+        <!-- Галерея -->
+        <div class="product__gallery">
+          <span class="product__category-tag">Улун · Ароматизированный</span>
+          <div class="product__image-wrap">
+            <img
+              class="product__image"
+              src="images/tea.jpg"
+              alt="Ананасовый улун — скрученные чайные листья с кусочками цукатов"
+              width="500" height="500"
+              loading="eager"
+            >
+            <button class="product__zoom" type="button" aria-label="Увеличить изображение">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                <circle cx="10" cy="10" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/>
+                <line x1="14.8" y1="14.8" x2="20" y2="20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <line x1="10" y1="7" x2="10" y2="13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                <line x1="7" y1="10" x2="13" y2="10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Сведения о товаре -->
+        <div class="product__info">
+
+          <h1 class="product__title">Ананасовый улун</h1>
+
+          <div class="product__meta">
+            <button class="product__wishlist" type="button" aria-pressed="false" aria-label="Добавить в избранное">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                <path d="M12 20.5s-7.5-4.6-10-9.3C0.2 7.8 2 4 5.8 4c2.1 0 3.7 1.3 4.6 2.8C11.3 5.3 12.9 4 15 4c3.8 0 5.6 3.8 3.8 7.2C16.3 15.9 12 20.5 12 20.5z" fill="none" stroke="currentColor" stroke-width="1.6"/>
+              </svg>
+            </button>
+            <a class="product__review-link" href="#reviews">Оставить отзыв</a>
+          </div>
+
+          <!-- Выбор фасовки -->
+          <fieldset class="product__variants" id="variants">
+            <legend>Фасовка</legend>
+            <div class="variants__list" role="radiogroup" aria-label="Выбор фасовки">
+              <!-- пункты фасовки генерируются в script.js из PRODUCT.variants,
+                   разметка одного пункта показана ниже как образец -->
+              <label class="variant" data-variant="0">
+                <input type="radio" name="variant" value="0" checked>
+                <span class="variant__size">100 г</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <!-- Цена и артикул -->
+          <div class="product__purchase">
+            <div class="product__price-block">
+              <span class="product__price" id="price">326,40 ₽</span>
+              <span class="product__old-price" id="oldPrice">349,20 ₽</span>
+            </div>
+            <div class="product__stock-block">
+              <span class="product__sku">арт. <span id="sku">01306</span></span>
+              <span class="product__stock">в наличии: много</span>
+            </div>
+          </div>
+
+          <button class="product__cart-btn" type="button" id="addToCart">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+              <path d="M3 4h2l1.6 10.6a2 2 0 0 0 2 1.7h8a2 2 0 0 0 2-1.6L20 8H6.2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="10" cy="20" r="1.4" fill="currentColor"/>
+              <circle cx="17" cy="20" r="1.4" fill="currentColor"/>
+            </svg>
+            <span class="product__cart-btn-text">В корзину</span>
+          </button>
+
+          <!-- Короткое описание -->
+          <div class="product__description">
+            <h2>О чае</h2>
+            <p>
+              Светлый фуцзяньский улун с крупным скрученным листом изумрудного цвета
+              и добавлением ароматных цукатов. В сухом виде похож на Те Гуань Инь,
+              а в чашке раскрывается свежей весенней зеленью и нотой спелого ананаса.
+            </p>
+            <dl class="product__facts">
+              <div><dt>Заваривание</dt><dd>1–3 мин, 80–85 °C</dd></div>
+              <div><dt>Регион</dt><dd>Фуцзянь, Китай</dd></div>
+              <div><dt>Хранение</dt><dd>в холодильнике</dd></div>
+            </dl>
+          </div>
+
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
